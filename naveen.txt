@@ -1,0 +1,12 @@
+class nani{
+public static void main(String[]args){
+String a=12453;
+String b=1455658;
+String c=a+b;:
+System.out.println(c);OA
+
+String name="naveen";
+System.out.println(name.charAt(3));
+
+}
+}
