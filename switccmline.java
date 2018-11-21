@@ -1,29 +1,38 @@
 public class switccmline {
     public static void main(String[] args) {
 
-        switch(args[0])
+        Day d = Day.valueOf(args[0]);
+//        String s=args[0];
+        switch(d)
 
         {
-            case "1":
-                System.out.println("SUNDAY");
+            case MONDAY:
+                System.out.println(Day.MONDAY.geti());
+                System.out.println(Day.MONDAY.getj());
                 break;
-            case "2":
-                System.out.println("MONDAY");
+            case TUESDAY:
+                System.out.println(Day.TUESDAY.geti());
+                System.out.println(Day.TUESDAY.getj());
                 break;
-            case "3":
-                System.out.println("TUESEDAY");
+            case WEDNESDAY:
+                System.out.println(Day.WEDNESDAY.geti());
+                System.out.println(Day.WEDNESDAY.getj());
                 break;
-            case "4":
-                System.out.println("WEDNESDAY");
+            case THURSDAY:
+                System.out.println(Day.THURSDAY.geti());
+                System.out.println(Day.THURSDAY.getj());
                 break;
-            case "5":
-                System.out.println("THURSDAY");
+            case FRIDAY:
+                System.out.println(Day.FRIDAY.geti());
+                System.out.println(Day.FRIDAY.getj());
                 break;
-            case "6":
-                System.out.println("FRIDAY");
+            case SATURDAY:
+                System.out.println(Day.SATURDAY.geti());
+                System.out.println(Day.SATURDAY.getj());
                 break;
-            case "7":
-                System.out.println("SATURDAY");
+            case SUNDAY:
+                System.out.println(Day.SUNDAY.geti());
+                System.out.println(Day.SUNDAY.getj());
                 break;
             default:
                 System.out.println(":) Input is not their :)");
