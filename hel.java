@@ -1,31 +1,41 @@
 public class hel {
-    public static void main(String[] args) {
+    public enum day{   MONDAY(1,"MO"), FRIDAY(2,"FR"),SUNDAY(3,"SUN"),SATURDAY(4,"SAT"),WENDAY(5,"WEN");
+        int i;
+        String j;
 
-        switch(args[0]){
-            case"1":
-                System.out.println("monday");
-                break;
-            case "2":
-                System.out.println("sunday");
-                break;
-            case"3":
-                System.out.println("satudy");
-                break;
-            case "4":
-                System.out.println("friday");
-                break;
-            case "5":
-                System.out.println("wenday");
-                break;
-            case"6":
-                System.out.println("tueday");
-                break;
-            case "7":
-                System.out.println("thusday");
-                break;
+        day(int i,String j) {
+            this.i = i;
+            this.j = j;
+        }
+
+            public static void main(String[] args) {
+                day n = day.valueOf(args[0]);
+
+                switch (n) {
+                    case MONDAY:
+                        System.out.println(day.MONDAY.i);
+                        System.out.println(day.MONDAY.j);
+                        break;
+                    case FRIDAY:
+                        System.out.println(day.FRIDAY.i);
+                        System.out.println(day.FRIDAY.j);
+                        break;
+                    case SUNDAY:
+                        System.out.println(day.SUNDAY.i);
+                        System.out.println(day.SUNDAY.j);
+                        break;
+                    case SATURDAY:
+                        System.out.println(day.SATURDAY.i);
+                        System.out.println(day.SATURDAY.j);
+                        break;
+                    case WENDAY:
+                        System.out.println(day.WENDAY.i);
+                        System.out.println(day.WENDAY.j);
+                        break;
+
+
 
                 }
 
-        }
-    }
+            }}}
 
